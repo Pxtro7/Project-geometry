@@ -24,6 +24,18 @@ public class Triangulo {
         return true;
     }
 
+    public void calcularArea(double ladoA, double ladoB, double ladoC){
+        double s = (ladoA + ladoB + ladoC)/2;
+        double area = Math.sqrt(s*(s-ladoA)*(s-ladoB)*(s-ladoC));
+        System.out.println("A area é: " + area);
+
+    }
+
+    public void calcularPerimetro(double ladoA, double ladoB, double ladoC){
+        double p = (ladoA + ladoB + ladoC);
+        System.out.println("O perimetro é: " + p);
+    }
+
     //Verifica se é um triangulo retangulo
     public boolean trianguloRetangulo() {
         if (Math.pow(ladoA, 2) + Math.pow(ladoB, 2) == Math.pow(ladoC, 2)) {

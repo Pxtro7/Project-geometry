@@ -28,7 +28,7 @@ public class Menu {
             System.out.println("Informe a opção desejada: ");
             int optionUser = scanner.nextInt();
 
-            switch(optionUser) {
+            switch (optionUser) {
                 case 1:
 
                     boolean exitCirculo = false;
@@ -40,7 +40,7 @@ public class Menu {
                     while (!exitCirculo) {
                         System.out.println("/***************************/");
                         System.out.println("/******** Circulo  *********/");
-                        System.out.println("/***************************/");
+                        System.out.println("/*/");
                         System.out.println("/* 1 - Cadastrar circulo   */");
                         System.out.println("/* 2 - Calcular area       */");
                         System.out.println("/* 3 - Calcular perimetro  */");
@@ -134,14 +134,16 @@ public class Menu {
                     boolean validaTriangulo = false;
 
                     while (!exitTriangulo) {
-                        System.out.println("/*************************************/");
-                        System.out.println("/********    Triangulo  **************/");
-                        System.out.println("/*************************************/");
-                        System.out.println("/* 1 - Cadastrar triangulo           */");
-                        System.out.println("/* 2 - Verificar triangulo Retangulo */");
-                        System.out.println("/* 3 - Verificar Triangulo 3,4,5     */");
-                        System.out.println("/* 4 - Sair                          */");
-                        System.out.println("/*************************************/");
+                        System.out.println("/**********************************/");
+                        System.out.println("/********    Triangulo  ***********/");
+                        System.out.println("/**********************************/");
+                        System.out.println("/* 1 - Cadastrar triangulo        */");
+                        System.out.println("/* 2 - Verificar triangulo        */");
+                        System.out.println("/* 3 - Verificar Triangulo 3,4,5  */");
+                        System.out.println("/* 4 - Calcular perimetro         */");
+                        System.out.println("/* 5 - Calcular a area            */");
+                        System.out.println("/* 6 - Sair                       */");
+                        System.out.println("/**********************************/");
                         System.out.println("Informe a opção desejada:");
 
                         int optionTriangulo = scanner.nextInt();
@@ -164,7 +166,23 @@ public class Menu {
                                     System.out.println("Cadastre um Triangulo");
                                 }
                                 break;
+
                             case 4:
+                                if (validaTriangulo){
+                                    triangulo.calcularPerimetro(triangulo.ladoA, triangulo.ladoB, triangulo.ladoC);
+                                }else {
+                                    System.out.println("Cadastre um triangulo");
+                                }
+                                break;
+
+                            case 5:
+                                if (validaTriangulo){
+                                    triangulo.calcularArea(triangulo.ladoA, triangulo.ladoB, triangulo.ladoC);
+                                }else {
+                                    System.out.println("Cadastre um triangulo");
+                                }
+                                break;
+                            case 6:
                                 System.out.println("Saindo triangulo...");
                                 exitTriangulo = true;
                                 break;
