@@ -16,14 +16,14 @@ public class Menu {
         boolean exit = false;
 
         while (!exit) {
-            System.out.println("/*/");
+            System.out.println("/*****************/");
             System.out.println("/*   Geometria   *");
-            System.out.println("/*/");
+            System.out.println("/*****************/");
             System.out.println("/* 1 - Circulo   *");
             System.out.println("/* 2 - Retangulo *");
             System.out.println("/* 3 - Triangulo *");
             System.out.println("/* 4 - Sair      *");
-            System.out.println("/*/");
+            System.out.println("/*****************/");
 
             System.out.println("Informe a opção desejada: ");
             int optionUser = scanner.nextInt();
@@ -38,14 +38,14 @@ public class Menu {
                     boolean validaCadastro = false;
 
                     while (!exitCirculo) {
-                        System.out.println("/*/");
+                        System.out.println("/***************************/");
                         System.out.println("/******** Circulo  *********/");
-                        System.out.println("/*/");
+                        System.out.println("/***************************/");
                         System.out.println("/* 1 - Cadastrar circulo   */");
                         System.out.println("/* 2 - Calcular area       */");
                         System.out.println("/* 3 - Calcular perimetro  */");
                         System.out.println("/* 4 - Sair                */");
-                        System.out.println("/*/");
+                        System.out.println("/***************************/");
                         System.out.println("Informe a opção desejada:");
 
                         int optionCirculo = scanner.nextInt();
