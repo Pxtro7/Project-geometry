@@ -134,14 +134,14 @@ public class Menu {
                     boolean validaTriangulo = false;
 
                     while (!exitTriangulo) {
-                        System.out.println("/**********************************/");
-                        System.out.println("/********    Triangulo  ***********/");
-                        System.out.println("/**********************************/");
-                        System.out.println("/* 1 - Cadastrar triangulo        */");
-                        System.out.println("/* 2 - Verificar triangulo        */");
-                        System.out.println("/* 3 - Verificar Triangulo 3,4,5  */");
-                        System.out.println("/* 4 - Sair                       */");
-                        System.out.println("/**********************************/");
+                        System.out.println("/*************************************/");
+                        System.out.println("/********    Triangulo  **************/");
+                        System.out.println("/*************************************/");
+                        System.out.println("/* 1 - Cadastrar triangulo           */");
+                        System.out.println("/* 2 - Verificar triangulo Retangulo */");
+                        System.out.println("/* 3 - Verificar Triangulo 3,4,5     */");
+                        System.out.println("/* 4 - Sair                          */");
+                        System.out.println("/*************************************/");
                         System.out.println("Informe a opção desejada:");
 
                         int optionTriangulo = scanner.nextInt();
